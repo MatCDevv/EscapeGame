@@ -13,4 +13,4 @@ function addProducts (data)
       (acti+=`<h4>${a.nom}</h4>`);
     })
   })
-};
+};miuhliuhi
