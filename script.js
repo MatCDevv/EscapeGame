@@ -7,14 +7,10 @@ fetch("escapeGame.json")
   });
 
 function addProducts (data) 
-{ data.forEach ((element) => {
-    let activite ="" 
-    element.entreprise.forEach((h) => {
-        (activite+=``);
-    });
-    document.querySelector ("#content").innerHTML +=`
-        <div></div>`
-});
-}
-
-    
+  { data.forEach ((element) => {
+    let acti=""
+    element.activites.forEach ((a) => { 
+      (acti+=`<h4>${a.nom}</h4>`);
+    })
+  })
+};
