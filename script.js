@@ -20,9 +20,6 @@ fetch("escapeGame.json")
     });
     document.querySelector(".content").innerHTML += `
     <section class="">
-    <video autoplay muted loop id="Video">
-    <source src="" type="video/mp4">
-    </video>
     <div class="">
       <strong> ${data.entreprise.nomCommercial}</strong>
       <h1 >${data.entreprise.phraseAccroche}</h1>

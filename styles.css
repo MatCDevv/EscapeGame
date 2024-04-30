@@ -15,12 +15,16 @@
     justify-content: space-between;
   }
 
+.enligne {
+  align-items: center;
+}
+
 header {
     width: 100%;
-    background-color:#2b2b2b;
-   /* position: -webkit-sticky;*/
     position: sticky;
     top:0px;
+    z-index: 100;
+    background-color:#2b2b2b;   
 }
 
 ul {
@@ -33,35 +37,34 @@ header a {
   text-decoration: none;
   color:#fff;
 }
-.band {
-  text-transform: uppercase;
-  align-items: center;
-  text-align: center;
-  gap: 70px;
+
+.padd1 {
+  margin-left: 50px;
+  margin-right: 35px;
+}
+
+.padd2 {
+  margin-left:35px;
 }
 
 .headi {
-  padding-top: 40px;
-  padding-left: 47px;
-  font-size: 17px;
-  font-family: "Nunito", sans-serif;
-  
-}
-
-.logoheader {
-  width: 100px;
-  margin-left:95px;
-  display: block;
-  object-fit: cover; 
-  padding-bottom: 9px;
-}
-
-.heado {
-  padding-top: 40px;
-  padding-left: 90px;
   font-size: 17px;
   font-family: "Nunito", sans-serif;
   gap:100px;
+}
+
+.logoheader {
+  width: 110px;
+  display: block;
+  object-fit: cover; 
+  padding-bottom: 10px;
+ 
+}
+
+.heado {
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+  gap:120px;
   
 }
 
@@ -69,3 +72,25 @@ main {
     width:100% ;
   }
 
+.video {
+  width: 100%;
+}
+
+.container { /* s'appliquera à tous les éléments ayant besoin de la marge interne left et right composant la grille de la maquette */
+  padding: 0 200px;
+  }
+
+.hero {
+  /*height: 70vh; *//* la hauteur de cette section est de 70vh = 70 view height = 70% de la hauteur de l'ecran */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #000;
+  transform: translate(-50%,-50%); /*remet le centre de déplaement au centre de gravité de l'objet*/
+}
+.relative{
+  position: relative;
+}
+.heroContent {
+  width: 50%;
+}
