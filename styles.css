@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -19,12 +20,16 @@
   align-items: center;
 }
 
+.relative{
+  position: relative;
+}
+
 header {
     width: 100%;
     position: sticky;
     top:0px;
     z-index: 100;
-    background-color:#2b2b2b;   
+    background-color:#121212;   
 }
 
 ul {
@@ -76,21 +81,52 @@ main {
   width: 100%;
 }
 
-.container { /* s'appliquera à tous les éléments ayant besoin de la marge interne left et right composant la grille de la maquette */
-  padding: 0 200px;
-  }
-
 .hero {
-  /*height: 70vh; *//* la hauteur de cette section est de 70vh = 70 view height = 70% de la hauteur de l'ecran */
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  border: 1px solid #000;
   transform: translate(-50%,-50%); /*remet le centre de déplaement au centre de gravité de l'objet*/
 }
-.relative{
-  position: relative;
+
+
+.nom {
+  color:white;
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
 }
-.heroContent {
-  width: 50%;
+
+.pp {
+  color:#fff;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+}
+
+.boutonreser {
+  height: 35px;
+  color: #ffffff;
+  background-color: #2c2b2b;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 16px;
+  padding: 9px 13px;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.material-symbols-outlined  {
+  font-size: 19px;
+}
+
+.textconcept {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding-top: 45px;
 }

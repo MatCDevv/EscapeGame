@@ -19,17 +19,19 @@ fetch("escapeGame.json")
       temoin += `<li>${t.prenom} ${t.typeExperience} ${t.commentaire}${t.note}</li>`;
     });
     document.querySelector(".content").innerHTML += `
-    <section class="">
-    <div class="">
-      <strong> ${data.entreprise.nomCommercial}</strong>
-      <h1 >${data.entreprise.phraseAccroche}</h1>
-      </div>
-      </section>
-      ${data.entreprise.texteAppelAction}
-      ${data.entreprise.avantagesClients}
-      ${activi}
-      ${pres}
-      ${temoin}
+    <div>
+        <h1 class="nom">${data.entreprise.nomCommercial}</h1>
+        <p class="pp">${data.entreprise.phraseAccroche}</p>
+    </div>`;
+    document.querySelector(".con").innerHTML += `
+    <p class="textconcept">" Un escape game est un jeu d'énigmes qui se vit en équipe. Les joueurs évoluent généralement dans un lieu clos et thématisé. Ils doivent résoudre une série de casse-têtes dans un temps imparti pour réussir à s'échapper ou à accomplir une mission. En résumé, c'est un peu comme Fort Boyard mais sans les épreuves physiques. "</p>
+    <a href="./Panier.html" class="boutonreser flex spaceBetween"><span class="material-symbols-outlined">Réserver</span></a>
     `;
     console.log(data);
   }
+
+    /*${data.entreprise.texteAppelAction}
+      ${data.entreprise.avantagesClients}
+      ${activi}
+      ${pres}
+      ${temoin}*/
