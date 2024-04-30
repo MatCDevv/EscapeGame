@@ -18,7 +18,7 @@ fetch("escapeGame.json")
     data.entreprise.temoignages.forEach((t) => {
       temoin += `<li>${t.prenom} ${t.typeExperience} ${t.commentaire}${t.note}</li>`;
     });
-    document.querySelector("#content").innerHTML += `
+    document.querySelector(".content").innerHTML += `
     <section class="">
     <video autoplay muted loop id="Video">
     <source src="" type="video/mp4">
