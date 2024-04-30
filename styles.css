@@ -27,6 +27,18 @@ ul {
   list-style-type: none;
 }
 
+.headi {
+  align-items: center;
+  text-align: center;
+  gap:10px;
+}
+
+.logoheader {
+  width: 100px;
+  margin-left: 500px;
+  
+}
+
 main {
     width:100% ;
   }
