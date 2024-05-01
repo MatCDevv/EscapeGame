@@ -18,11 +18,14 @@ fetch("escapeGame.json")
       <img class="cardimgp" src="${p.image}" alt="Images des Présentations"/>
       </div>
    
+
       <div class="width50">
       <h3 class="cardtp">${p.titre}</h3>
       <p class="cardtexp">${p.texte}</p>
       </div>
-      </article>`;
+      </article>
+    
+      `;
     });
     let temoin = "";
     data.entreprise.temoignages.forEach((t) => {
@@ -37,14 +40,31 @@ fetch("escapeGame.json")
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".prestaj").innerHTML += `
-    <section class="prestaj container-1000">${pres}</section>`;
+    <div data-aos="fade-up">${pres}</div ata-aos="fade-up">
+    `;
+    document.querySelector(".appelreserv1").innerHTML += `
+    <p class="appelres">${data.entreprise.texteAppelAction}</p>
+    `;
+    document.querySelector(".activj").innerHTML += `
+    
+    `;
+
+    
     
     
     console.log(data);
   }
 
+
+  
+  AOS.init();
+
     /*${data.entreprise.texteAppelAction}
       ${data.entreprise.avantagesClients}
       ${activi}
       ${pres}
-      ${temoin}*/
+      ${temoin}
+      
+      
+      
+      */
