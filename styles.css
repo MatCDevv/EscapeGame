@@ -12,7 +12,7 @@
  
 .flex {
     display: flex;
-    flex-wrap: wrap;
+    
   }
 
 .spacebettween {
@@ -173,6 +173,7 @@ main {
   width: 350px;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
 }
 
 
@@ -202,6 +203,54 @@ main {
 }
 
 /* Carde Activités*/
+
+.cardga {
+  width: 40%;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
+  margin: 85px 0 0 15px;
+}
+
+.cardda {
+  width: 80%;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
+  margin: 85px 15px 0 0;
+  
+}
+
+.cardpa {
+  font-size: 20px;
+  padding: 10px 0 0 20px;
+  margin-top: 7px;
+  margin-left: 0px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.cardspan3a {
+  margin-left:20px;
+}
+
+.cardtexa {
+  font-size: 13px;
+  padding: 10px 0 0 20px;
+  margin-left:10px;
+  margin-right: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+ 
+}
+
+
+.cardimga {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Footer */
 
 footer {
   width: 100%;

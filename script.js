@@ -8,7 +8,16 @@ fetch("escapeGame.json")
   function addProducts(data) {
     let activi = "";
     data.entreprise.activites.forEach((a) => {
-      activi += `<li>${a.nom} ${a.description} <img src="${a.image}" alt="${a.nom}"/> </li>`;
+      activi += `
+                <div class="cardga enligne">
+                <img class="cardimga" src="${a.image}" alt="${a.nom}"/>
+                <span></span><p class="cardspan3a">difficulté</p>
+                </div>
+                <div class="cardda">
+                <h3 class="cardpa">${a.nom}</h3>
+                <p class="cardtexa">${a.description} </p>
+                </div>
+      `;
     });
     let pres = "";
     data.entreprise.presentation.forEach((p) => {
@@ -40,12 +49,13 @@ fetch("escapeGame.json")
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".prestaj").innerHTML += `
-    <div data-aos="fade-up">${pres}</div ata-aos="fade-up">
+    <div data-aos="fade-up">${pres}</div data-aos="fade-up">
     `;
     document.querySelector(".appelreserv1").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".activj").innerHTML += `
+    <section class="activj flex" data-aos="zoom-in-down">${activi}</section>
     
     `;
 
