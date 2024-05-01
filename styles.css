@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*STANDAR*/
 
 * {
     margin: 0;
@@ -26,6 +27,12 @@
   position: relative;
 }
 
+.container-1000{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 header {
     width: 100%;
     position: sticky;
@@ -39,6 +46,8 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+
+/* HEADER */
 
 header a {
   text-decoration: none;
@@ -75,10 +84,14 @@ header a {
   
 }
 
+/*MAIN*/
+
 main {
     width:100% ;
   }
 
+/* HERO */
+  
 .video {
   width: 100%;
 }
@@ -96,7 +109,7 @@ main {
   font-family: "Lexend", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -106,6 +119,30 @@ main {
   font-family: "Inter", sans-serif;
   font-weight: 200;
   text-align: center;
+}
+
+/*Texte Concept + AppelReservation*/
+
+.guille {
+  color:#262626;
+}
+
+.textconcept {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+.appelres {
+  font-size: 23px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 .boutonreser {
@@ -130,16 +167,39 @@ main {
   font-size: 19px;
 }
 
-.textconcept {
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 200;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  
+/*Carde(div) Gauche Presentation Jeux*/
+
+.cardimgp {
+  width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-.guille {
-  color:#262626;
+
+.cardtp {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 9px;
 }
+
+
+.cardtexp {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+   text-align: center;
+  }
+
+/* Presentation */
+
+.width50{
+  width: calc(50% - 20px)
+}
+
+.articlep {
+  margin-top:100px;
+  margin-bottom: 140px;
+}
+
