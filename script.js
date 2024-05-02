@@ -39,18 +39,16 @@ fetch("escapeGame.json")
     
       `;
     });
-    let temoin = "";
+    
     data.entreprise.temoignages.forEach((t) => {
-      temoin += `
-					  <li class="splide__slide slide" data-splide-interval="1000"> 
-            <h4 class="commtitre">${t.typeExperience}</h4>
-					  <p class="commtext">${t.commentaire}</p>
-            <p class="commPrem">${t.prenom}</p>
-					  <span class="material-symbols-outlined">vpn_key</span>
-					  <p>${t.note}</p></li>
-            
-
-    `;
+    document.querySelector("#commentSlider").innerHTML +=`
+    <li class="splide__slide slide" data-splide-interval="500"> 
+    <h4 class="commtitre">${t.typeExperience}</h4>
+    <p class="commtext">${t.commentaire}</p>
+    <p class="commPrem">${t.prenom}</p>
+    <span class="material-symbols-outlined">vpn_key</span>
+    <p>${t.note}</p></li>
+`;
     });
     document.querySelector(".tetedepage").innerHTML += `
     <div>
@@ -64,35 +62,36 @@ fetch("escapeGame.json")
     <div data-aos="fade-up"
     data-aos-duration="5000">${pres}</div>
     `;
+   /* document.querySelector(".comm0").innerHTML += `
+          <li class="splide__slide slide0" data-splide-interval="1000"> 
+            <h4 class="commtitre">${data.entreprise.avantagesClients}</h4>
+					 </li>
+           
+    `;*/
     document.querySelector(".appelreserv1").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".activj").innerHTML += `
     <section class="activj flex" data-aos="zoom-in data-aos-duration="2000">${activi}</section>
     `;
-    document.querySelector(".comm").innerHTML += `
   
-				  <ul class="splide__list">
-					 ${temoin}
-				  </ul>
-	
+    document.querySelector(".appelreserv2").innerHTML += `
+    <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     
     
     console.log(data);
+
+    var splide = new Splide( '.splide', {
+      type   : 'loop',
+      perPage :1,
+      autoplay: true,
+    } );
+    splide.mount();
+
   }
 
-
-
-
-
-  var splide = new Splide( '.splide', {
-    type    : 'loop',
-    perPage : 3,
-    autoplay: true,
-  } );
   
-  splide.mount();
  
   
   

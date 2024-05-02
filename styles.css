@@ -39,6 +39,7 @@ header {
     top:0px;
     z-index: 100;
     background-color:#121212;
+    /*background-image: ;*/
     /*filter: blur(7px);*/ 
 }
 
@@ -203,6 +204,28 @@ main {
   margin-bottom: 120px;
 }
 
+
+/* Commentaire avantage*/
+
+.comm0 {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 75px;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
+}
+
+
+.slide0 {
+  background-color: rgb(82, 82, 82);
+}
+
+.commtitre {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+
+
 /* Carde Activités*/
 
 .cardga {
@@ -270,16 +293,16 @@ main {
 
 /* Commentaire Experience*/
 
-.comm {
+/*.comm1 {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 70px;
+  margin-bottom: 75px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
 }
 
 
 .slide {
-  height: 140px;
-  background-color: aqua;
+  background-color: #464646;
 }
 
 .commtitre {
@@ -296,7 +319,7 @@ main {
 .commPrem {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
-}
+}*/
 
 
 /* Footer */
