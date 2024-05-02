@@ -39,17 +39,8 @@ fetch("escapeGame.json")
     
       `;
     });
-    
-    data.entreprise.temoignages.forEach((t) => {
-    document.querySelector("#commentSlider").innerHTML +=`
-    <li class="splide__slide slide" data-splide-interval="500"> 
-    <h4 class="commtitre">${t.typeExperience}</h4>
-    <p class="commtext">${t.commentaire}</p>
-    <p class="commPrem">${t.prenom}</p>
-    <span class="material-symbols-outlined">vpn_key</span>
-    <p>${t.note}</p></li>
-`;
-    });
+
+
     document.querySelector(".tetedepage").innerHTML += `
     <div>
         <h1 class="nom">${data.entreprise.nomCommercial}</h1>
@@ -62,18 +53,38 @@ fetch("escapeGame.json")
     <div data-aos="fade-up"
     data-aos-duration="5000">${pres}</div>
     `;
-   /* document.querySelector(".comm0").innerHTML += `
-          <li class="splide__slide slide0" data-splide-interval="1000"> 
-            <h4 class="commtitre">${data.entreprise.avantagesClients}</h4>
-					 </li>
-           
-    `;*/
+
+/* Slider des Aventages */
+
+    data.entreprise.avantagesClients.forEach((a) => {
+    document.querySelector("#commentSlider1").innerHTML += `
+        <li class="splide__slide slide0" data-splide-interval="3000"> 
+            <h4 class="commtitre">${a}</h4>
+               </li>
+    `;
+    });
+
     document.querySelector(".appelreserv1").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".activj").innerHTML += `
     <section class="activj flex" data-aos="zoom-in data-aos-duration="2000">${activi}</section>
     `;
+
+/* Slider des Commentaires*/
+
+    data.entreprise.temoignages.forEach((t) => {
+      document.querySelector("#commentSlider").innerHTML +=`
+      <li class="splide__slide slide" data-splide-interval="3200"> 
+      <h4 class="commtitre textcenter">${t.typeExperience}</h4>
+      <p class="commtext textcenter">${t.commentaire}</p>
+      <div class="flex enligne">
+      <p class="commnote">${t.note}</p>
+      <span class="material-symbols-outlined iconcomm">vpn_key</span>
+      <p class="commPrem">${t.prenom}</p>
+      </div></li>
+      `;
+      });
   
     document.querySelector(".appelreserv2").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
@@ -81,13 +92,28 @@ fetch("escapeGame.json")
     
     
     console.log(data);
-
-    var splide = new Splide( '.splide', {
+/*
+    var splide = new Splide( '.comm0', {
       type   : 'loop',
       perPage :1,
       autoplay: true,
     } );
     splide.mount();
+
+    var splide2 = new Splide( '.comm1', {
+      type   : 'loop',
+      perPage :1,
+      autoplay: true,
+    } );
+    splide2.mount();*/
+
+    document.querySelectorAll(".splide").forEach(s=>{
+      new Splide(s,{
+        type   : 'loop',
+      perPage :1,
+      autoplay: true,
+      }).mount()
+    })
 
   }
 
