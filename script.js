@@ -41,7 +41,16 @@ fetch("escapeGame.json")
     });
     let temoin = "";
     data.entreprise.temoignages.forEach((t) => {
-      temoin += `<li>${t.prenom} ${t.typeExperience} ${t.commentaire}${t.note}</li>`;
+      temoin += `
+					  <li class="splide__slide slide" data-splide-interval="1000"> 
+            <h4 class="commtitre">${t.typeExperience}</h4>
+					  <p class="commtext">${t.commentaire}</p>
+            <p class="commPrem">${t.prenom}</p>
+					  <span class="material-symbols-outlined">vpn_key</span>
+					  <p>${t.note}</p></li>
+            
+
+    `;
     });
     document.querySelector(".tetedepage").innerHTML += `
     <div>
@@ -60,16 +69,30 @@ fetch("escapeGame.json")
     `;
     document.querySelector(".activj").innerHTML += `
     <section class="activj flex" data-aos="zoom-in data-aos-duration="2000">${activi}</section>
-    
     `;
-
-    
+    document.querySelector(".comm").innerHTML += `
+  
+				  <ul class="splide__list">
+					 ${temoin}
+				  </ul>
+	
+    `;
     
     
     console.log(data);
   }
 
 
+
+
+
+  var splide = new Splide( '.splide', {
+    type    : 'loop',
+    perPage : 3,
+    autoplay: true,
+  } );
+  
+  splide.mount();
  
   
   
