@@ -12,7 +12,7 @@ fetch("escapeGame.json")
       activi += `
                 <div class="cardga enligne">
                 <img class="cardimga" src="${a.image}" alt="${a.nom}"/>
-                <span></span><p class="cardspan3a"></p>
+                <a href="" alt="Direction activité"><span class="material-symbols-outlined cardspan3a">data_loss_prevention</span></a>
                 </div>
                 <div class="cardda">
                 <h3 class="cardpa">${a.nom}</h3>
@@ -113,31 +113,19 @@ fetch("escapeGame.json")
     })    
   }
 
-  var map = L.map('map').setView([45.4397, 4.3872], 14);
+  var map = L.map('map').setView([48.8575, 2.3514], 14);
 
   var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
     minZoom: 0,
     maxZoom: 20,
-    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank" class="copyrimap">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank" class="copyrimap">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" class="copyrimap">OpenStreetMap</a>',
     ext: 'png'
   }).addTo(map);
   
-  L.marker([45.4397, 4.3872]).addTo(map)
-  .bindPopup('<span class="material-symbols-outlined span1">emoji_people </span>')
+  L.marker([48.8575, 2.3514]).addTo(map)
+  .bindPopup('<span class="material-symbols-outlined span1">Rejoignez-nous ici !</span>')
       .openPopup();
 
-
-
-
-  
   AOS.init();
 
-    /*${data.entreprise.texteAppelAction}
-      ${data.entreprise.avantagesClients}
-      ${activi}
-      ${pres}
-      ${temoin}
-      
-      
-      
-      */
+    

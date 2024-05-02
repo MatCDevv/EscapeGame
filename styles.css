@@ -47,7 +47,8 @@ header {
     position: sticky;
     top:0px;
     z-index: 100;
-    background-color:#121212;
+    background-color: #000000;
+    /*background-image: url("")*/
     /*background-image: ;*/
     /*filter: blur(7px);*/ 
 }
@@ -169,16 +170,16 @@ main {
   align-items: center;
   border-radius: 10px;
   margin-top: 16px;
-  padding: 9px;
-  left: 50%;
+  padding: 12px 9px 9px 9px;
+  /*left: 50%;*/
   /*transform: translate(-50%,-50%);*/
 }
 
-.material-symbols-outlined  {
+.material-symbols-outlined {
   font-size: 19px;
 }
 
-/*Carde Presentation Jeux(unvalid)*/
+/*Carde Presentation Jeux(valid)*/
 
 .cardimgp {
   width: 350px;
@@ -278,7 +279,10 @@ main {
 }
 
 .cardspan3a {
-  margin-left:20px;
+  font-size: 60px;
+  margin-left:72px;
+  margin-top: 7px;
+  color:#000000;
 }
 
 .cardtexa {
@@ -301,6 +305,10 @@ main {
 
 
 /* Commentaire Experience*/
+
+.radiusslider{
+  border-radius: 20px;
+}
 
 .comm1 {
   width:80%;
@@ -345,7 +353,8 @@ main {
 }
 
 .commPrem {
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
   font-size: 20px;
   padding-top: 25px;
   margin-left: 680px;
@@ -365,17 +374,23 @@ main {
 }
 
 .span1 {
-  color : #5e5e5e;  
-  padding-left: 91px;
-  font-size: 25px;
+  color : #000000;  
+  font-size: 8px;
 }
 
 .mapstyle{
   margin-top: 40px;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 80px;
   box-shadow: 10px 10px 22px hsla(0, 0%, 0%, 0.379);
-  border-radius: 5px;
+  border-radius: 8px;
+}
+
+.copyrimap {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
 }
 
 
@@ -384,5 +399,11 @@ main {
 footer {
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  background-color: #000000;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
