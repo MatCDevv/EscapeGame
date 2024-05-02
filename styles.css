@@ -173,7 +173,7 @@ main {
   width: 350px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
+  box-shadow: 8px 8px 16px hsla(0, 0%, 0%, 0.379);
 }
 
 
@@ -208,14 +208,14 @@ main {
   width: 40%;
   border-radius: 12px 0 0 12px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
-  margin: 85px 0 0 15px;
+  margin: 125px 0 0 15px;
 }
 
 .cardda {
   width: 80%;
   border-radius: 0 12px 12px 0;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
-  margin: 85px 15px 0 0;
+  margin: 125px 15px 0 0;
   
 }
 

@@ -1,3 +1,6 @@
+
+
+
 fetch("escapeGame.json")
   .then(rep => {
     return rep.json();
@@ -49,13 +52,14 @@ fetch("escapeGame.json")
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".prestaj").innerHTML += `
-    <div data-aos="fade-up">${pres}</div data-aos="fade-up">
+    <div data-aos="fade-up"
+    data-aos-duration="5000">${pres}</div>
     `;
     document.querySelector(".appelreserv1").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".activj").innerHTML += `
-    <section class="activj flex" data-aos="zoom-in-down">${activi}</section>
+    <section class="activj flex" data-aos="zoom-in data-aos-duration="2000">${activi}</section>
     
     `;
 
@@ -66,6 +70,8 @@ fetch("escapeGame.json")
   }
 
 
+ 
+  
   
   AOS.init();
 
