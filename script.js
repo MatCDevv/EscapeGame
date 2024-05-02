@@ -1,6 +1,4 @@
 
-
-
 fetch("escapeGame.json")
   .then(rep => {
     return rep.json();
