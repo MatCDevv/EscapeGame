@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Luxurious+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*STANDAR*/
 
@@ -269,7 +270,7 @@ main {
 
 .cardpa {
   font-size: 20px;
-  padding: 10px 0 0 20px;
+  padding: 10px 10px 10px 10px;
   margin-top: 7px;
   margin-left: 0px;
   font-family: "Nunito", sans-serif;
@@ -282,12 +283,12 @@ main {
 
 .cardtexa {
   font-size: 13px;
-  padding: 10px 0 0 20px;
+  padding: 10px 10px 10px 10px;
   margin-left:10px;
   margin-right: 5px;
   font-family: "Inter", sans-serif;
   font-weight: 200;
- 
+  text-align: center;
 }
 
 
@@ -295,7 +296,7 @@ main {
   width: 200px;
   height: 150px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 12px 2px 2px 2px;
 }
 
 
@@ -333,18 +334,48 @@ main {
 }
 
 .commnote{
-  font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  color: #934709;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-left:110px;
 }
 
 .commPrem {
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  padding-top: 25px;
+  margin-left: 680px;
+  font-weight: bold;
 }
 
 .iconcomm {
-  color: #a3520f;
-  font-size: 18px;
+  color: #934709;
+  padding-top: 25px;
+  font-size: 23px;
+}
+
+/* Partie Map */
+
+#map {
+  height: 300px;
+}
+
+.span1 {
+  color : #5e5e5e;  
+  padding-left: 91px;
+  font-size: 25px;
+}
+
+.mapstyle{
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 10px 10px 22px hsla(0, 0%, 0%, 0.379);
+  border-radius: 5px;
 }
 
 

@@ -6,15 +6,15 @@ fetch("escapeGame.json")
     return rep.json();
   })
   .then(data => {
-    addProducts(data);
+    addContent(data);
   });
-  function addProducts(data) {
+  function addContent(data) {
     let activi = "";
     data.entreprise.activites.forEach((a) => {
       activi += `
                 <div class="cardga enligne">
                 <img class="cardimga" src="${a.image}" alt="${a.nom}"/>
-                <span></span><p class="cardspan3a">difficulté</p>
+                <span></span><p class="cardspan3a"></p>
                 </div>
                 <div class="cardda">
                 <h3 class="cardpa">${a.nom}</h3>
@@ -50,8 +50,7 @@ fetch("escapeGame.json")
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".prestaj").innerHTML += `
-    <div data-aos="fade-up"
-    data-aos-duration="5000">${pres}</div>
+    <div data-aos="zoom-in data-aos-duration="2000">${pres}</div>
     `;
 
 /* Slider des Aventages */
@@ -80,7 +79,7 @@ fetch("escapeGame.json")
       <p class="commtext textcenter">${t.commentaire}</p>
       <div class="flex enligne">
       <p class="commnote">${t.note}</p>
-      <span class="material-symbols-outlined iconcomm">vpn_key</span>
+      <span class="material-symbols-outlined iconcomm">lock</span>
       <p class="commPrem">${t.prenom}</p>
       </div></li>
       `;
@@ -113,13 +112,25 @@ fetch("escapeGame.json")
       perPage :1,
       autoplay: true,
       }).mount()
-    })
-
+    })    
   }
 
+  var map = L.map('map').setView([45.4397, 4.3872], 14);
+
+  var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+    minZoom: 0,
+    maxZoom: 20,
+    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    ext: 'png'
+  }).addTo(map);
   
- 
-  
+  L.marker([45.4397, 4.3872]).addTo(map)
+  .bindPopup('<span class="material-symbols-outlined span1">emoji_people </span>')
+      .openPopup();
+
+
+
+
   
   AOS.init();
 
