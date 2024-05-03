@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Luxurious+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anek+Kannada:wdth,wght@90,100..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@200&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@665&family=Luxurious+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*STANDAR*/
 
@@ -196,8 +197,7 @@ main {
 
 .cardimgp {
   width: 350px;
-  border-radius: 20px;
-  object-fit: cover;
+  border-radius: 6px;
   box-shadow: 8px 8px 16px hsla(0, 0%, 0%, 0.379);
   margin-left: 45px;
 }
@@ -243,18 +243,18 @@ main {
   margin-top: 70px;
   margin-bottom: 75px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 
 .slide0 {
   background-color: rgb(255, 255, 255);
   height: 100px;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .pourulav{
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .commtitre {
@@ -269,14 +269,14 @@ main {
 
 .cardga {
   width: 40%;
-  border-radius: 12px 0 0 12px;
+  border-radius: 5px 0 0 5px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
   margin: 125px 0 0 15px;
 }
 
 .cardda {
   width: 80%;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 5px 5px 0;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
   margin: 125px 15px 0 0;
   
@@ -313,7 +313,7 @@ main {
   width: 200px;
   height: 150px;
   object-fit: cover;
-  border-radius: 12px 2px 2px 2px;
+  border-radius: 5px 1px 1px 1px;
 }
 
 
@@ -326,7 +326,7 @@ main {
 }
 
 .radiusslider{
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .comm1 {
@@ -336,14 +336,14 @@ main {
   margin-top: 70px;
   margin-bottom: 75px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 
 .slide {
   background-color: rgb(255, 255, 255);
   height: 200px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .commtitre {
@@ -412,6 +412,77 @@ main {
   font-weight: 200;
 }
 
+
+/* Tableau Horraire*/
+
+
+    /* Base*/
+    .tailletab {
+      margin-top: 60px;
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+  
+  .grandtitretab {
+      font-family: "Nunito", sans-serif;
+      font-size: 22px;
+      margin-bottom: 7px;
+      text-align: center;
+  }
+  
+  .petittiretab {
+    font-size: 21px;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:#fff;
+  }
+  
+  .petittexttab {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+  }
+  
+      /* Base */
+  
+       /* Partie Tete Tableau*/
+  .tabhead {
+      background-color: #000000; 
+      border-radius: 4px 4px 0 0 ;  
+      box-shadow: 4px 4px 12px  hsla(0, 0%, 0%, 0.379);
+  }
+  
+  .borderrighr {
+      border-right: 1px solid #fff;
+  }
+  
+  .tabtitrepad{
+      padding:10px;
+  }
+  
+      /* Partie Tete Tableau*/
+  
+      /* Partie Corps Tableau*/
+  .tabcate {
+      box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
+      border-radius: 0 0 4px 4px; 
+  }
+  
+  .tabcatetime {
+      padding-left: 15px;
+      
+  }
+  
+  .tabcateicon {
+      padding-left: 122.5px;
+      padding-right: 38.5px;
+  }
+  
+      /* Partie Corps Tableau*/
+  
+  /* Tableau Horraire*/
 
 /* Footer */
 

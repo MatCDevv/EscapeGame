@@ -55,7 +55,7 @@ fetch("escapeGame.json")
 
     data.entreprise.avantagesClients.forEach((a) => {
     document.querySelector("#commentSlider1").innerHTML += `
-        <li class="splide__slide slide0" data-splide-interval="3000"> 
+        <li class="splide__slide slide0" data-splide-interval="2000"> 
         <h4 class="commtitre">  
           <span class="material-symbols-outlined guille1">format_quote</span>${a}<span class="material-symbols-outlined guille1">format_quote</span>
         </h4>
@@ -67,14 +67,14 @@ fetch("escapeGame.json")
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
     document.querySelector(".activj").innerHTML += `
-    <section class="activj flex" data-aos="zoom-in data-aos-duration="2000">${activi}</section>
+    <section class="activj flex" data-aos="fade-down" data-aos-duration="4000">${activi}</section>
     `;
 
 /* Slider des Commentaires*/
 
     data.entreprise.temoignages.forEach((t) => {
       document.querySelector("#commentSlider").innerHTML +=`
-      <li class="splide__slide slide" data-splide-interval="3200"> 
+      <li class="splide__slide slide" data-splide-interval="6000"> 
       <h4 class="commtitre textcenter">${t.typeExperience}</h4>
       <p class="commtext textcenter"><span class="material-symbols-outlined guille1">format_quote</span>${t.commentaire}<span class="material-symbols-outlined guille1">format_quote</span></p>
       <div class="flex enligne">
