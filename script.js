@@ -130,7 +130,7 @@ fetch("escapeGame.json")
 
   var map = L.map('map').setView([48.8575, 2.3514], 14);
 
-  var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  var Jawg_Dark = L.tileLayer('https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
     minZoom: 0,
     maxZoom: 20,
     attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank" class="copyrimap">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank" class="copyrimap">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" class="copyrimap">OpenStreetMap</a>',
