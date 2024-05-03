@@ -56,8 +56,10 @@ fetch("escapeGame.json")
     data.entreprise.avantagesClients.forEach((a) => {
     document.querySelector("#commentSlider1").innerHTML += `
         <li class="splide__slide slide0" data-splide-interval="3000"> 
-            <h4 class="commtitre">${a}</h4>
-               </li>
+        <h4 class="commtitre">  
+          <span class="material-symbols-outlined guille1">format_quote</span>${a}<span class="material-symbols-outlined guille1">format_quote</span>
+        </h4>
+        </li>
     `;
     });
 
@@ -74,10 +76,10 @@ fetch("escapeGame.json")
       document.querySelector("#commentSlider").innerHTML +=`
       <li class="splide__slide slide" data-splide-interval="3200"> 
       <h4 class="commtitre textcenter">${t.typeExperience}</h4>
-      <p class="commtext textcenter">${t.commentaire}</p>
+      <p class="commtext textcenter"><span class="material-symbols-outlined guille1">format_quote</span>${t.commentaire}<span class="material-symbols-outlined guille1">format_quote</span></p>
       <div class="flex enligne">
-      <p class="commnote">${t.note}</p>
-      <span class="material-symbols-outlined iconcomm">lock</span>
+      <p class="commnote">${avis(t.note)}</p>
+      
       <p class="commPrem">${t.prenom}</p>
       </div></li>
       `;
@@ -90,6 +92,8 @@ fetch("escapeGame.json")
     
     console.log(data);
 /*
+<span class="material-symbols-outlined iconcomm">star_rate</span>
+
     var splide = new Splide( '.comm0', {
       type   : 'loop',
       perPage :1,
@@ -113,6 +117,17 @@ fetch("escapeGame.json")
     })    
   }
 
+  function avis(not){
+    let chaine =""
+    for(let i=1; i<=not; i++){
+        chaine+="★"
+    }
+    for(let j=0; j<5-not;j++){
+        chaine+="☆"
+    }
+    return chaine;
+}
+
   var map = L.map('map').setView([48.8575, 2.3514], 14);
 
   var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
@@ -123,8 +138,8 @@ fetch("escapeGame.json")
   }).addTo(map);
   
   L.marker([48.8575, 2.3514]).addTo(map)
-  .bindPopup('<span class="material-symbols-outlined span1">Rejoignez-nous ici !</span>')
-      .openPopup();
+  /*.bindPopup('<span class="material-symbols-outlined span1 textcenter">strategy</span>')
+      .openPopup();*/
 
   AOS.init();
 

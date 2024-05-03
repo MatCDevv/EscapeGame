@@ -10,6 +10,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet"
@@ -26,14 +28,15 @@
 
 <body>
 	<header>
+		<!-- HEADER -->
 		<section>
 			<div class="flex enligne">
 				<div class="padd1">
 					<nav>
 						<ul class="flex headi">
-							<li><a href="" alt="Catégorie Concepts">LES CONCEPTS</a></li>
-							<li><a href="" alt="Catégorie Jeux">NOS JEUX</a></li>
-							<li><a href="" alt="Catégorie Tarifs">LES TARIFS</a></li>
+							<li><a href="#CONCEPT" alt="Catégorie Concepts">LE CONCEPT</a></li>
+							<li><a href="#NOS JEUX" alt="Catégorie Jeux">NOS JEUX</a></li>
+							<li><a href="#LES TARIFS" alt="Catégorie Tarifs">LES TARIFS</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,22 +47,26 @@
 				<div class="padd2">
 					<nav>
 						<ul class="flex heado">
-							<li><a href="" alt="Catégorie Lieux">OÙ JOUER</a></li>
-							<li><a href="" alt="Catégorie Contact">RÉSERVER</a></li>
-							<li><a href="" alt="Catégorie FAQ">FAQ</a></li>
+							<li><a href="#OÙ JOUER" alt="Catégorie Lieux">OÙ JOUER</a></li>
+							<li><a href="PageReservation.html" alt="Catégorie réservation">RÉSERVER</a></li>
+							<li><a href="#FAQ" alt="Catégorie FAQ">FAQ</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</section>
+		<!-- HEADER -->
 	</header>
 	<main>
+		<!-- HERO -->
 		<section class="relative">
 			<video autoplay muted loop class="video">
 				<source src="./assets/detective.mp4" type="video/mp4">
 			</video>
 			<div class="tetedepage hero"></div>
 		</section>
+		<!-- HERO -->
+		<!-- Text IntroConcept -->
 		<div data-aos="zoom-in data-aos-duration="2000">
 			<p class="textconcept">
 				<span class="material-symbols-outlined guille">format_quote</span>
@@ -68,14 +75,21 @@
 				s'échapper ou à accomplir une mission.
 				<span class="material-symbols-outlined guille">format_quote</span>
 			</p>
+		</div>
+		<!-- Text IntroConcept -->
+		<!-- Bouton+Text Reservaton-->
 			<div class="textcenter" data-aos="zoom-in data-aos-duration="2000">
 			<p class="appelreserv"></p>
-			<a href="./Réserver.html" alt="Réserver" class="boutonreser"><span
+			<a href="PageReservation.html" alt="Réserver" class="boutonreser"><span
 					class="material-symbols-outlined">touch_app</span></a>
-			</div>
+			
 		</div>
+		<!-- Bouton+Text Reservaton-->
+		<!-- Présentation DehorsConcept-->
+		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000"><h4 class="petittire" id="CONCEPT">LE CONCEPT</h4><p class="petittext">Quelle sera votre mission ?</p></div>
 		<section class="prestaj container-1000"></section>
-
+		<!-- Présentation DehorsConcept-->
+		<!-- Avantage client (slider)-->
 		<section class="splide comm0 textcenter" aria-label="Splide Basic HTML Example" data-aos="zoom-in data-aos-duration="2000">
 			<div class="splide__track pourulav">
 				<ul class="splide__list" id="commentSlider1">
@@ -83,13 +97,20 @@
 				</ul>
 			</div>
 		</section>
+		<!-- Avantage client (slider)-->
+		<!-- Bouton+Text Reservaton-->
 		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000">
 		<p class="appelreserv1"></p>
-		<a href="./Réserver.html" alt="Réserver" class="boutonreser"><span
+		<a href="PageReservation.html" alt="Réserver" class="boutonreser"><span
 				class="material-symbols-outlined">touch_app</span></a>
 		</div>
+		<!-- Bouton+Text Reservaton-->
+		<!-- Partie Activité de Dehors-->
+		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000"><h4 class="petittire" id="NOS JEUX">NOS JEUX</h4><p class="petittext">Lequel, choisirez-vous ?</p></div>
 		<section class="activj flex"></section>
-
+		<!-- Partie Activité de Dehors-->
+		<!-- Commentaire (slider)-->
+		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000"><h4 class="petittire" id="FAQ">L'avis de nos précédents Aventuriers.</h4></div>
 		<section class="splide comm1 " aria-label="Splide Basic HTML Example" data-aos="zoom-in data-aos-duration="2000">
 			<div class="splide__track radiusslider">
 				<ul class="splide__list radiusslider" id="commentSlider">
@@ -97,11 +118,21 @@
 				</ul>
 			</div>
 		</section>
+		<!-- Commentaire (slider)-->
+		<!-- Bouton+Text Reservaton-->
 		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000">
 		<p class="appelreserv2"></p>
-		<a href="./Réserver.html" alt="Réserver" class="boutonreser"><span class="material-symbols-outlined">touch_app</span></a>
-		</div>
+		<a href="PageReservation.html" alt="Réserver" class="boutonreser"><span
+			class="material-symbols-outlined">touch_app</span></a>
+			</div>
+		<!-- Bouton+Text Reservaton-->
+		<!-- Partie Tarifs-->
+
+		<!--Partie Tarifs-->
+		<!--Map -->
+		<div class="textcenter" data-aos="zoom-in data-aos-duration="2000"><h4 class="petittire" id="OÙ JOUER">OÙ JOUER ?</h4><p class="petittext">Retrouvez-nous ici !</p></div>
 		<div id="map" class="mapstyle" data-aos="zoom-in data-aos-duration="2000"></div>
+		<!--Map-->
 	</main>
 	<footer>
 		<section>
