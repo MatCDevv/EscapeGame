@@ -88,6 +88,14 @@ fetch("escapeGame.json")
     document.querySelector(".appelreserv2").innerHTML += `
     <p class="appelres">${data.entreprise.texteAppelAction}</p>
     `;
+
+    document.querySelector(".appelreserv3").innerHTML += `
+    <p class="appelres">${data.entreprise.texteAppelAction}</p>
+    `;
+
+    document.querySelector(".appelreserv4").innerHTML += `
+    <p class="appelres">${data.entreprise.texteAppelAction}</p>
+    `;
     
     
     console.log(data);
@@ -128,7 +136,7 @@ fetch("escapeGame.json")
     return chaine;
 }
 
-  var map = L.map('map').setView([48.8575, 2.3514], 14);
+  var map = L.map('map').setView([48.8580, 2.3812], 14);
 
   var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 0,
@@ -137,7 +145,7 @@ fetch("escapeGame.json")
     ext: 'png'
   }).addTo(map);
   
-  L.marker([48.8575, 2.3514]).addTo(map)
+  L.marker([48.8580, 2.3812]).addTo(map)
   /*.bindPopup('<span class="material-symbols-outlined span1 textcenter">strategy</span>')
       .openPopup();*/
 
