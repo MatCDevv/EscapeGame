@@ -43,7 +43,7 @@
   margin-left: auto;
 }
 
-header {
+.headerindex {
     width: 100%;
     position: sticky;
     top:0px;
@@ -150,7 +150,7 @@ main {
 /*Texte Concept + AppelReservation*/
 
 .guille {
-  color:#262626;
+  color: #6e3a0f;
 }
 
 .textconcept {
@@ -184,13 +184,13 @@ main {
   align-items: center;
   border-radius: 10px;
   margin-top: 16px;
-  padding: 12px 9px 9px 9px;
+  padding: 11px 10px 6px 10px;
   /*left: 50%;*/
   /*transform: translate(-50%,-50%);*/
 }
 
-.material-symbols-outlined {
-  font-size: 19px;
+.tailleboutondirectreserv {
+  font-size:20px;
 }
 
 /*Carde Presentation Jeux(valid)*/
@@ -292,10 +292,19 @@ main {
 }
 
 .cardspan3a {
-  font-size: 60px;
-  margin-left:72px;
-  margin-top: 7px;
-  color:#000000;
+  margin-left:37px;
+  margin-top: 10px;
+  
+}
+
+.taillekeylogoop {
+  font-size:24px;
+  color: #6e3a0f;
+}
+
+.taillekeylogonoop {
+  font-size:24px;
+  color: #1b1b1b;
 }
 
 .cardtexa {
@@ -320,7 +329,7 @@ main {
 /* Commentaire Experience*/
 
 .guille1 {
-  color:#262626;
+  color: #6e3a0f;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -365,7 +374,7 @@ main {
   font-weight: 400;
   font-style: normal;
   font-size: 21px;
-  color: #934709;
+  color: #6e3a0f;
   padding-top: 25px;
   padding-right: 1px;
   padding-left:110px;
@@ -381,7 +390,7 @@ main {
 }
 
 .iconcomm {
-  color: #934709;
+  color: #6e3a0f;
   padding-top: 25px;
   font-size: 24px;
 }
@@ -423,7 +432,7 @@ main {
   
        /* Partie Tete Tableau*/
   .tabhead {
-      background-color: #000000; 
+      background-color:#1e1d1d;
       border-radius: 4px 4px 0 0 ;  
       box-shadow: 4px 4px 12px  hsla(0, 0%, 0%, 0.379);
   }
@@ -453,6 +462,10 @@ main {
       padding-left: 122.5px;
       padding-right: 38.5px;
   }
+
+  .taillecadena {
+    font-size:19px;
+  }
   
       /* Partie Corps Tableau*/
   
@@ -470,7 +483,7 @@ main {
   padding: 8px;
   border-radius: 7px;
   box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
-  background-color: #000000;
+  background-color: #1e1d1d;
 }
 
 .cardtextplayer {
@@ -623,8 +636,10 @@ footer a {
 /* Reservation */
 
 .video1 {
-  width: 50%;
+  width: 48%;
   margin-left: 25%;
+  border-radius: 2px;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.379);
 }
 
 .ppm {
@@ -633,11 +648,44 @@ footer a {
   font-family: "Inter", sans-serif;
   font-weight: 200;
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.ppt {
+  color:#fff;
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 5px;
+  
 }
 
 .heroRR {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%,-50%); /*remet le centre de déplaement au centre de gravité de l'objet*/
 }
+
+.boutonacceil {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.taillelogopagereserve {
+  font-size:30px;
+}
+
+.reservhead {
+  width: 100%;
+  position: sticky;
+  top:0px;
+  z-index: 100;
+  /*background-image: url("")*/
+  /*background-image: ;*/
+  /*filter: blur(7px);*/ 
+}
+
+
+

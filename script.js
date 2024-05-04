@@ -12,7 +12,7 @@ fetch("escapeGame.json")
       activi += `
                 <div class="cardga enligne">
                 <img class="cardimga" src="${a.image}" alt="${a.nom}"/>
-                <a href="PageReservation.html" alt="Direction activité"><span class="material-symbols-outlined cardspan3a">data_loss_prevention</span></a>
+                <p class="cardspan3a">${diff(a.difficulte)}</p>
                 </div>
                 <div class="cardda">
                 <h3 class="cardpa">${a.nom}</h3>
@@ -55,7 +55,7 @@ fetch("escapeGame.json")
 
     data.entreprise.avantagesClients.forEach((a) => {
     document.querySelector("#commentSlider1").innerHTML += `
-        <li class="splide__slide slide0" data-splide-interval="2000"> 
+        <li class="splide__slide slide0" data-splide-interval="4500"> 
         <h4 class="commtitre">  
           <span class="material-symbols-outlined guille1">format_quote</span>${a}<span class="material-symbols-outlined guille1">format_quote</span>
         </h4>
@@ -134,6 +134,17 @@ fetch("escapeGame.json")
         chaine+="☆"
     }
     return chaine;
+}
+
+function diff(noto){
+  let chaine =""
+  for(let i=1; i<=noto; i++){
+      chaine+=`<span class="material-symbols-outlined taillekeylogoop">vpn_key</span>`
+  }
+  for(let j=0; j<5-noto;j++){
+      chaine+=`<span class="material-symbols-outlined taillekeylogonoop">vpn_key_off</span>`
+  }
+  return chaine;
 }
 
   var map = L.map('map').setView([48.8580, 2.3812], 14);

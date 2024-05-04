@@ -12,17 +12,21 @@
         {
           "nom": "Mystère du Manoir",
           "description": "Explorez un manoir mystérieux rempli d'énigmes et de mystères. Parviendrez-vous à résoudre les énigmes et à vous échapper avant que le temps ne s'écoule ?",
-          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/manoir.jpg?v=1714149453690"
+          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/manoir.jpg?v=1714149453690",
+          "difficulte": "4"
         },
         {
           "nom": "Évasion dans l'Espace",
           "description": "Voyagez dans l'espace et relevez des défis intergalactiques. Une aventure cosmique qui mettra à l'épreuve votre esprit d'équipe et votre ingéniosité.",
-          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/espace.jpg?v=1714149452774"
+          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/espace.jpg?v=1714149452774",
+          "difficulte": "4"
         },
         {
           "nom": "Mission Secrète: Paris",
           "description": "Plongez dans une mission secrète au cœur de Paris. Résolvez des énigmes pour déjouer les complots et accomplir votre mission dans la Ville Lumière.",
-          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/louvre.jpg?v=1714149453250"
+          "image": "https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/louvre.jpg?v=1714149453250",
+          "difficulte": "5"
+
         }
       ],
       "presentation": [
