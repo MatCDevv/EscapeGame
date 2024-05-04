@@ -623,5 +623,21 @@ footer a {
 /* Reservation */
 
 .video1 {
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.ppm {
+  color:#fff;
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+.heroRR {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%); /*remet le centre de déplaement au centre de gravité de l'objet*/
 }

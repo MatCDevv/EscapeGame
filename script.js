@@ -12,7 +12,7 @@ fetch("escapeGame.json")
       activi += `
                 <div class="cardga enligne">
                 <img class="cardimga" src="${a.image}" alt="${a.nom}"/>
-                <a href="" alt="Direction activité"><span class="material-symbols-outlined cardspan3a">data_loss_prevention</span></a>
+                <a href="PageReservation.html" alt="Direction activité"><span class="material-symbols-outlined cardspan3a">data_loss_prevention</span></a>
                 </div>
                 <div class="cardda">
                 <h3 class="cardpa">${a.nom}</h3>
